@@ -1,9 +1,12 @@
 {
+  "homepage": "https://natalia-ponomarenko.github.io/recipes-landing-tailwind/",
   "name": "recipes_landing_page",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build-css": "tailwindcss build -i src/styles.css -o public/styles.css",
     "watch-css": "tailwindcss build -i ./src/styles.css -o ./public/styles.css --watch"
   },
